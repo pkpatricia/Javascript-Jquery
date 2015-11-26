@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 2</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Patricia Parker">
+    <meta name="robots" content="noindex, nofollow">
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+
+</head>
+<body>
+   <h1 class="text-center">Lab 2</h1>
+    <script type="text/javascript">
+        // This is the area where the arrays are created.
+        var questions = ["What is your favorite color?", "What is your favorite season?", "What age do you want to retire?"];
+        var quotes = ["I can and I will.",
+                     "Silence is the most powerful scream.",
+                     "Better things are coming.",
+                     "She turned her can'ts into cans and her dreams into plans.",
+                     "Stars can't shine without darkness."];
+        
+        // Prompt user for number. Turn string into number and assign the remainder of the given number divided by 5 to 
+        // the variable choice.
+        var choice = (Number(prompt("Please enter a positive number between 1 and 10."))) % 5;
+        
+        // Write a quote out to the page using the resulting remainder in the variable choice as the array index.
+        document.write('<p>Here is your quote for the day: </p>' + quotes[choice] + '<br>');
+        
+        // Prompt the user to enter a trivia question and store it as the last item in the array.
+        questions.push(prompt("Please enter in a question."));
+        
+        // Delete the first item from the array and store it in a variable.
+        var first_question = questions.shift();
+        
+        // Prompt the user to enter a second trivia question and store it as the first item in the array.
+        questions.unshift(prompt("Please enter in a question."));
+        
+        // Write out all questions from the array on the page.
+        document.write('<p>Here are the questions for your trivia quiz: </p>' + questions + '<br>');
+        
+        // Write out the deleted question stored in the variable as the bonus question.
+        document.write('<p>Here is your bonus question: </p>' + first_question + '<br>');
+    </script>
+</body>
+</html>

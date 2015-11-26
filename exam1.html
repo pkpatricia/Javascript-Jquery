@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	var a = 1;
+	var b = 2;
+	var c = "3";
+	var d = "dog";
+	var e = "food";
+	var x = a + b;
+	var y = b + c;
+	var z = d + e;
+	document.write(x + "<br>");
+	document.write(y + "<br>");
+	document.write(z + "<br>");
+	var a = 10;
+	var b = 20;
+
+	var answer = (a > b) ? 'a': 'b';
+	document.write(answer + "<br>");
+	
+	var total = 100;
+	
+	function salesTax(total) {
+     total = total + (total * .08);
+     return total;
+}
+
+
+var newTotal = salesTax(total);
+	document.write(newTotal + "<br>");
+	document.write(total + "<br>");
+	
+	var taxRate = 0;
+	var state = "TX";
+	
+	switch (state) {
+   case "AR":
+       taxRate = .05;
+       break;
+   case "LA":
+       taxRate = .06;
+       break;
+   case "OK":
+       taxRate = .07;
+       break;
+   case "TX":
+       taxRate = .08;
+       break;
+   default:
+       taxRate = .04;
+}
+	
+	
+	document.write(taxRate + "<br>");
+</script>	
+</body>
+</html>
