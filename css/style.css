@@ -21,14 +21,14 @@ h1, h2 {
 .first {
 	color: mediumturquoise !important;
 	background: purple !important;
-	border: dotted orange thick;
+	border: dotted orange thick !important;
 	font-size: 10px;
 }
 
 .second {
 	color: yellow !important;
 	background: aqua !important;
-	border: solid black thick;
+	border: solid black thick !important;
 	font-style: bold !important;
 	font-size: 30px;
 	text-decoration: overline;
@@ -40,9 +40,13 @@ h1, h2 {
 	text-decoration: underline;
 	font-family: 'Lobster', cursive;
 	font-size: 45px;
-	border: double purple thick;
+	border: double purple thick !important;
 }
 
+.thirtythree {
+	width: 33.333%;
+	float: left;
+}
 .glyphicon-heart {
     color: #ff1d8e;
 }
